@@ -139,3 +139,13 @@ def detection_anomalies():
     sb.scatterplot(x='2000', y='2010', hue='Anomalies', data=df, palette='Set1')
     plt.title('Détection des Anomalies')
     plt.show()
+def top_5_pays_max_min():
+    years = ['2009', '2010', '2011', '2012', '2013']
+    df['Total_5_Years'] = df[years].sum(axis=1)
+    top_Pays = df.nlargest(5, 'Total_5_Years')[['Country', 'Total']]
+    print("Les 5 pays avec le plus de migrants sur les 5 dernières années :")
+    print(top_Pays)
+    
+    Tail_countries = df.nsmallest(5, 'Total_5_Years')[['Country', 'Total']]
+    print("Les 5 pays avec le moins de migrants sur les 5 dernières années :")
+    print(Tail_countries)
