@@ -1,12 +1,14 @@
 import pandas as pd
-df=pd.read_csv('immigration.csv')
 from sklearn.metrics import mean_squared_error,r2_score
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split,cross_val_score
+from sklearn.cluster import KMeans
+from statsmodels.tsa.arima.model import ARIMA
+from sklearn.ensemble import IsolationForest
+from sklearn.preprocessing import StandardScaler
 import seaborn as sb
-
 import matplotlib.pyplot as plt
-
+df=pd.read_csv('immigration.csv')
 
 def max_pays():
 
@@ -102,11 +104,19 @@ def model():
     print(validation)
 
 def previsions_long_terme():
-    df_yearly = df.groupby('Year')['Total'].sum()
+    years = list(map(str, range(1980, 2014)))
+    df_yearly = df[years].sum(axis=0)
+    df_yearly.index = pd.to_datetime(df_yearly.index, format='%Y')
+    df_yearly.index.freq = 'YS'
+
     model = ARIMA(df_yearly, order=(5, 1, 0))
     model_fit = model.fit()
+
     forecast = model_fit.forecast(steps=5)
-    print(forecast)
+    forecast_index = pd.date_range(start=df_yearly.index[-1] + pd.DateOffset(years=1), periods=5, freq='YS')
+    forecast_series = pd.Series(forecast, index=forecast_index)
+
+    print(forecast_series.round())
 
 def clustering_pays():
     years = list(map(str, range(1980, 2014)))
@@ -119,11 +129,6 @@ def clustering_pays():
     plt.title('Clustering des Pays')
     plt.show()
 
-def analyse_tendances_saisonnalite():
-    df_yearly = df.groupby('Year')['Total'].sum()
-    decomposition = sm.tsa.seasonal_decompose(df_yearly, model='multiplicative')
-    fig = decomposition.plot()
-    plt.show()
 
 def detection_anomalies():
     years = list(map(str, range(1980, 2014)))
