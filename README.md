@@ -41,11 +41,19 @@ Visualise le nombre d'immigrés par année pour un pays donné sous forme de gra
 ### 5. Max Continent
 Identifie le continent avec le plus grand nombre d'immigrés cumulés et affiche le nombre total d'immigrés.
 
+![Capture d’écran 2024-06-20 à 15 54 25 (2)](https://github.com/watara13/Analyse_immigration/assets/171569734/0bdc8bd4-7325-4316-be2a-130ccd5dd3ef)
+
+
 ### 6. Prévisualisation des Données
 Affiche les premières lignes du dataset, les noms des colonnes et des statistiques descriptives pour une compréhension initiale des données.
 
+![Capture d’écran 2024-06-20 à 15 54 25 (2)](https://github.com/watara13/Analyse_immigration/assets/171569734/1ccfed6f-c63d-4828-a426-5b752a4ce61d)
+
+
 ### 7. Modèle de Régression
 Utilise une régression linéaire pour prédire le nombre d'immigrés futurs en fonction des données historiques, fournissant un outil puissant pour les prévisions.
+![Capture d’écran 2024-06-20 à 15 54 29 (2)](https://github.com/watara13/Analyse_immigration/assets/171569734/6e54f815-b442-46bb-bf7b-f7136afda4cd)
+
 
 ### 8. Prévisions Long Terme
 Utilise le modèle ARIMA pour prédire les données d'immigration sur les 5 prochaines années, aidant à anticiper les tendances futures.
