@@ -16,15 +16,27 @@ L'objectif principal de ce projet est de fournir des insights approfondis sur le
 
 ### 1. Max Pays
 Affiche les cinq pays ayant le plus grand nombre d'immigrés cumulés. Cela nous permet d'identifier les principales destinations d'immigration.
+![Capture d’écran 2024-06-20 à 15 54 08 (2)](https://github.com/watara13/Analyse_immigration/assets/171569734/91ace847-d590-4419-b791-2e4fa489a9f7)
+
+
 
 ### 2. Visualisation par Continent
 Visualise le nombre total d'immigrés par continent sous forme de graphique à barres, fournissant une vue d'ensemble des tendances migratoires globales.
 
+![Capture d’écran 2024-06-20 à 15 54 08 (2)](https://github.com/watara13/Analyse_immigration/assets/171569734/30b77128-d867-4c45-a20b-a6cab3e4d773)
+
+
+
 ### 3. Croissance
 Analyse la croissance annuelle du nombre d'immigrés pour un pays donné, permettant de comprendre les dynamiques d'immigration au niveau national.
 
+![Capture d’écran 2024-06-20 à 15 54 20 (2)](https://github.com/watara13/Analyse_immigration/assets/171569734/e5bab960-14a2-483d-a119-6f44198ecaf1)
+
 ### 4. Visualisation par Pays
 Visualise le nombre d'immigrés par année pour un pays donné sous forme de graphique linéaire, offrant une perspective temporelle sur les flux migratoires.
+
+![Capture d’écran 2024-06-20 à 15 54 20 (2)](https://github.com/watara13/Analyse_immigration/assets/171569734/34fe9702-8584-4f99-9be1-80e4de1cb3b7)
+
 
 ### 5. Max Continent
 Identifie le continent avec le plus grand nombre d'immigrés cumulés et affiche le nombre total d'immigrés.
