@@ -64,6 +64,10 @@ Utilise le modèle ARIMA pour prédire les données d'immigration sur les 5 proc
 ### 9. Clustering Pays****
 Effectue un clustering des pays en fonction des données d'immigration à l'aide de KMeans, permettant d'identifier des groupes de pays aux caractéristiques similaires.
 
+![Capture d’écran 2024-06-20 à 16 04 04 (2)](https://github.com/watara13/Analyse_immigration/assets/171569734/2dd14093-00de-47bf-897b-6e72c35e0b39)
+
+
+
 ### 10. Détection des Anomalies
 Détecte les anomalies dans les données d'immigration à l'aide de l'Isolation Forest, aidant à identifier les données aberrantes ou les événements exceptionnels.
 ![Capture d’écran 2024-06-20 à 16 04 04 (2)](https://github.com/watara13/Analyse_immigration/assets/171569734/d1529fa5-a507-47a9-9688-66402bb48a42)
