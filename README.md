@@ -57,9 +57,15 @@ Utilise une régression linéaire pour prédire le nombre d'immigrés futurs en 
 
 ### 8. Prévisions Long Terme
 Utilise le modèle ARIMA pour prédire les données d'immigration sur les 5 prochaines années, aidant à anticiper les tendances futures.
+![Capture d’écran 2024-06-20 à 16 04 04 (2)](https://github.com/watara13/Analyse_immigration/assets/171569734/ac3c3a39-3402-4330-9086-e316b56a38c7)
 
-### 9. Clustering Pays
+
+
+### 9. Clustering Pays****
 Effectue un clustering des pays en fonction des données d'immigration à l'aide de KMeans, permettant d'identifier des groupes de pays aux caractéristiques similaires.
 
 ### 10. Détection des Anomalies
 Détecte les anomalies dans les données d'immigration à l'aide de l'Isolation Forest, aidant à identifier les données aberrantes ou les événements exceptionnels.
+![Capture d’écran 2024-06-20 à 16 04 04 (2)](https://github.com/watara13/Analyse_immigration/assets/171569734/d1529fa5-a507-47a9-9688-66402bb48a42)
+
+
